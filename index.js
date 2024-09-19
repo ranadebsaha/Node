@@ -185,3 +185,42 @@
 
 // app.listen(5000);
 
+//----------------Mongodb------------------
+// const {MongoClient} = require('mongodb');
+// const url='mongodb://localhost:27017';
+// const database='rds';
+// const client=new MongoClient(url);
+
+// async function dbConnect(){
+//     let result = await client.connect();
+//     let db=result.db(database);
+//     return db.collection('test');
+//     // let res= await collection.find().toArray();
+//     // console.log(res);
+// }
+
+// console.log(dbConnect());
+// dbConnect().then((res)=>{
+//     res.find().toArray().then((data)=>{
+//         console.log(data);
+//     });
+// });
+
+// const main= async ()=>{
+//     let data=await dbConnect();
+//     data= await data.find().toArray();
+//     console.log(data);
+// }
+
+// main();
+
+const dbConnect=require('./mongodb');
+
+// const main= async ()=>{
+//     let data=await dbConnect();
+//     data= await data.find().toArray();
+//     console.log(data);
+// }
+
+// main();
+
