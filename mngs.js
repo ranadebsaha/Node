@@ -6,7 +6,7 @@ const main=async()=>{
         name:String,
         age:Number
     });
-
+    
     const TestModel=mongoose.model('test',TestSchema);
     let data = new TestModel({name:'ranadeb saha',age:20});
     let result=await data.save();
